@@ -3,6 +3,6 @@
 </h1>
 <ul>
 <% @mentoras.each do |mentora| %>
-    <li><%=mentora.nome %></li>
+    <li><%=mentora.nome %> <%= link_to 'Ver Mais', mentora_path(mentora) %> </li>
 <% end %>
 </ul>   
